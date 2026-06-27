@@ -1,0 +1,15 @@
+{
+	"name": "dfashwin",
+	"properties": {
+		"trustModeClaimForMi": {
+			"value": "Disabled",
+			"editable": true
+		}
+	},
+	"location": "southindia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "f6e69c6a-5409-461b-a1a2-76f8c3391bf3",
+		"tenantId": "ace4e35f-8484-4ca2-a71f-f55a764ea283"
+	}
+}
