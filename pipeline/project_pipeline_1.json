@@ -1,5 +1,5 @@
 {
-	"name": "pipeline3",
+	"name": "project_pipeline_1",
 	"properties": {
 		"activities": [
 			{
@@ -259,7 +259,7 @@
 													{
 														"name": "cdc",
 														"value": {
-															"value": "SELECT MAX(@{activity('new_date').output.resultsets[0].rows[0].cdc}) AS cdc\nFROM @{activity('new_date').output}",
+															"value": "@activity('new_date').output.resultSets[0].rows[0].cdc\n\n",
 															"type": "Expression"
 														}
 													}
@@ -305,7 +305,7 @@
 												"parameters": {
 													"container": "bronze",
 													"folder": {
-														"value": "@{item().table}.cdc",
+														"value": "@{item().table}_cdc",
 														"type": "Expression"
 													},
 													"file": "cdc.json"
